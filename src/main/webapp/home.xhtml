@@ -28,12 +28,20 @@
              <f:param name="pageId" value ="hello"/>
              
          </h:commandButton  >
-
+</h:form>
              
-             
+          <h3> Forward vs redirect</h3>  
+               
+         <h:form>
+         <h:commandButton action ="hello" value="Go to hello"/>
+        </h:form>
+          
+          <h:form>
+         <h:commandButton action ="hello?faces-redirect=true" value="Redirect to hello"/>
+        </h:form>
              
          
-        </h:form>
+        
         
         
     </h:body>
